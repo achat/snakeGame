@@ -69,7 +69,7 @@ public class App {
             getInputMap(WHEN_IN_FOCUSED_WINDOW).put(
                     KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "RESTART");
 
-            timer = new Timer(60, event -> moveSnake());
+            timer = new Timer(240, event -> moveSnake());
             startGame();
         }
 
